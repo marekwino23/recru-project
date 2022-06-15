@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, message } from "antd";
-import { useNotesStore } from "../context/myContext";
+import { useNotesStore } from "../context/NoteContext";
 
 export const NewNote = () => {
   const [noteText, setNoteText] = useState("");
@@ -13,10 +13,9 @@ export const NewNote = () => {
     message.info("Added note is successful");
   };
   return (
-    <>
+    <div className="box-note">
       <textarea type="text" onChange={onChange} value={noteText}></textarea>
-      <br></br>
       <Button onClick={addNote}>Add Note</Button>
-    </>
+    </div>
   );
 };

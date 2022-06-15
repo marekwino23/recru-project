@@ -6,7 +6,7 @@ import Details from "./pages/Details";
 import Contact from "./pages/Contact";
 import { observer } from "mobx-react";
 import { NewNote } from "./new/NewNote";
-import { useNotesStore } from "./context/myContext";
+import { useNotesStore } from "./context/NoteContext";
 
 function App() {
   const notesStore = useNotesStore();

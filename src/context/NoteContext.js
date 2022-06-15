@@ -1,5 +1,5 @@
 import { useContext, createContext } from "react";
-import { createNotesStore } from "../stores/myStore";
+import { createNotesStore } from "../stores/NoteStore";
 import { useLocalObservable } from "mobx-react";
 
 const NotesContext = createContext(null);

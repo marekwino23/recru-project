@@ -19,6 +19,13 @@
   justify-content: space-around;
 }
 
+.box-note {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
 .box {
   border: 1px dashed black;
   width: 20%;
